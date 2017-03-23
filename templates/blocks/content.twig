@@ -1,0 +1,9 @@
+<article{{ function('post_class') }}>
+    <header>
+        <h2 class="entry-title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+        {% include "blocks/entry-meta.twig" %}
+    </header>
+    <div class="entry-summary">
+        {{ post.post_excerpt }}
+    </div>
+</article>

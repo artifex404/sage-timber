@@ -1,0 +1,8 @@
+<header class="banner">
+    <div class="container">
+        {% block "header" %}
+            <a class="brand" href="{{ site.url }}">{{ site.name }}</a>
+            {% include 'blocks/nav-primary.twig' %}
+        {% endblock %}
+    </div>
+</header>

@@ -1,0 +1,48 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    {% for post in posts %}
+        <article {{ function('post_class') }}>
+            <header>
+                <h1 class="entry-title">{{ post.title }}</h1>
+                {{ include "blocks/entry-meta.twig" }}
+            </header>
+            <div class="entry-content">
+                {{ post.content }}
+            </div>
+            <footer>
+                {{ wp_link_pages }}
+                {{ include "blocks/comments.twig" }}
+            </footer>
+        </article>
+
+        <article class="{{ post_class }}">
+            <section class="article-content">
+                <h1 class="entry-title">{{ post.title }}</h1>
+                <p class="blog-author">
+                    <span>{{ __('By', 'sage') }}</span><a href="{{post.author.path}}"> {{ post.author.name }} </a><span>&bull;</span> {{ post.post_date|date }}
+                </p>
+                <div class="article-body">
+                    {{ post.content }}
+                </div>
+            </section>
+
+            <section id="comments" class="comments">
+                {% if post.comments %}
+                    <h2>{{ __('Comments', 'sage') }}</h2>
+                    <ol class="comment-list">
+                        {% for comment in post.comments %}
+                            {% include "blocks/comment.twig" with {comment:comment} %}
+                        {% endfor %}
+                    </ol>
+                {% endif %}
+
+                {% if post.comment_status == "closed" %}
+                    <div class="alert alert-warning">{{ __('Comments are closed.', 'sage') }}</div>
+                {% else %}
+                    {% include "comment-form.twig" %}
+                {% endif %}
+            </section>
+        </article>
+    {% endfor %}
+{% endblock %}
