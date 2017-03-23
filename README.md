@@ -32,22 +32,13 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 
 Install SageTimber by copying the project into a new folder within your WordPress themes directory.
 
-Make sure [Composer](https://getcomposer.org/download/) has been installed before moving on.
-
-Install SageTimber using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
-
-```shell
-# @ example.com/site/web/app/themes/
-$ composer create-project roots/sage your-theme-name 8.5.1
-```
-
 ## Theme setup
 
 Edit `lib/setup.php` to enable or disable theme features, setup navigation menus, post thumbnail sizes, post formats, and sidebars.
 
 ## Theme development
 
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+SageTimber uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
 
 ### Install gulp and Bower
 
@@ -98,7 +89,7 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
 
 Contributions are welcome from everyone. Just issue a pull request to this repository.
 
-## Community
+## Sage Community
 
 Keep track of development and community news.
 
