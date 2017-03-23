@@ -1,8 +1,8 @@
 <header class="banner">
     <div class="container">
-        {% block "header" %}
+        {% block header %}
             <a class="brand" href="{{ site.url }}">{{ site.name }}</a>
-            {% include 'blocks/nav-primary.twig' %}
+            {% include 'blocks/nav-primary.twig' with {menu: menu.get_items} %}
         {% endblock %}
     </div>
 </header>

@@ -1,8 +1,8 @@
 <!doctype html>
 <html {{ function('language_attributes') }}>
-    {% include 'head.twig' %}
+    {% include 'blocks/head.twig' %}
     <body {{ function('body_class') }}>
-        {% include 'header.twig' %}
+        {% include 'blocks/header.twig' %}
         <div class="wrap container" role="document">
             <div class="content row">
                 <main class="main">
@@ -12,7 +12,7 @@
             </div>
         </div>
         {% block footer %}
-            {% include 'footer.twig' %}
+            {% include 'blocks/footer.twig' %}
             {{ function('wp_footer') }}
         {% endblock %}
     </body>
