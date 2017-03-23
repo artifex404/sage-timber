@@ -1,8 +1,8 @@
 # SageTimber Starter Theme for Wordpress
 
-SageTimber is Sage theme ported to work with Timber.
+SageTimber is [Sage theme](https://github.com/roots/sage) ported to work with [Timber](https://www.upstatement.com/timber/).
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+Sage is a WordPress starter theme based on HTML5 Boilerplate, [gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Bootstrap](http://getbootstrap.com/), that will help you make better themes.
 
 ## Requirements
 
@@ -23,7 +23,6 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * [Bower](http://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
 * [Bootstrap](http://getbootstrap.com/)
-* [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
 * ARIA roles and microformats
 * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
 * [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
