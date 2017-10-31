@@ -4,14 +4,12 @@
 
     <section class="comment-box">
         {% if post.comments %}
-            <h4> replies </h4>
+            <h4>{{ __('replies', 'sage') }}</h4>
             <div class="comments">
                 {% for comment in comment.children %}
                     {% include "blocks/comment.twig" with {comment:comment} %}
                 {% endfor %}
             </div>
         {% endif %}
-
-        {% include "blocks/comment-form.twig" %}
     </section>
 </div>
