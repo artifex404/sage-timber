@@ -10,7 +10,7 @@
     {% endif %}
 
     {% for post in posts %}
-        {% include "templates/content.twig" with {post: post}  %}
+        {% include "templates/blocks/content.twig" with {post: post}  %}
     {% endfor %}
 
     {{ function('the_posts_navigation') }}
