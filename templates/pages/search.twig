@@ -4,7 +4,7 @@
 
     {% include 'blocks/page-header.twig' %}
 
-    {% if posts.post_count == 0 %}
+    {% if posts == [] %}
         {{ __('Sorry, no results were found.', 'sage') }}
         {{ function('get_search_form') }}
     {% endif %}
