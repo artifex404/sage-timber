@@ -4,13 +4,13 @@
 
     {% include 'blocks/page-header.twig' %}
 
-    {% if posts.post_count == 0 %}
+    {% if posts == [] %}
         {{ __('Sorry, no results were found.', 'sage') }}
         {{ function('get_search_form') }}
     {% endif %}
 
     {% for post in posts %}
-        {% include "templates/content.twig" with {post: post}  %}
+        {% include "templates/blocks/content.twig" with {post: post}  %}
     {% endfor %}
 
     {{ function('the_posts_navigation') }}
