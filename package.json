@@ -1,6 +1,6 @@
 {
   "name": "sage",
-  "version": "8.5.3",
+  "version": "8.5.4",
   "author": "Ben Word <ben@benword.com>",
   "homepage": "https://roots.io/sage/",
   "private": true,
@@ -56,8 +56,6 @@
     "wiredep": "^4.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "jquery": "^2.2.4",
-    "popper.js": "^1.12.6"
+    "bootstrap": "^4.0.0"
   }
 }

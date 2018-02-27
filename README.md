@@ -65,7 +65,7 @@ For example, if your local development URL is `http://project-name.dev` you woul
 ```json
 ...
   "config": {
-    "devUrl": "http://project-name.dev"
+    "devUrl": "http://project-name.test"
   }
 ...
 ```
